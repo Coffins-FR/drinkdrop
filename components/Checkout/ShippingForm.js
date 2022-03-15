@@ -110,7 +110,7 @@ function ShippingForm() {
       <div className="md:w-1/2">
         <fieldset className="mb-3 md:mb-4">
           <legend className="text-black font-medium text-lg md:text-xl py-3 block">
-            Shipping address
+            Adresse de récéption
           </legend>
 
           <AddressFields
@@ -123,7 +123,7 @@ function ShippingForm() {
       <div className="md:w-1/2">
         <fieldset className="mb-3 md:mb-4">
           <legend className="text-black font-medium text-lg md:text-xl py-3 block">
-            Shipping
+            Envoi
           </legend>
           <div>
             {watchCountry ? (
@@ -148,7 +148,7 @@ function ShippingForm() {
               </>
             ) : (
               <p className="text-sm text-black">
-                Please enter your address to fetch shipping options
+                S'il vous plaît entrez votre adresse pour voir les options de réception
               </p>
             )}
           </div>

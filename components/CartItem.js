@@ -21,7 +21,7 @@ function CartItem({ id, media, name, quantity, line_total, selected_options }) {
       .then(handleUpdateCart)
       .then(({ subtotal }) =>
         toast(
-          `${name} has been removed from your cart. Your new subtotal is now ${subtotal.formatted_with_symbol}`
+          `${name} a été retirer de votre panier. Votre nouveau subtotal est de ${subtotal.formatted_with_symbol} !`
         )
       );
 
@@ -32,7 +32,7 @@ function CartItem({ id, media, name, quantity, line_total, selected_options }) {
           .then(handleUpdateCart)
           .then(({ subtotal }) =>
             toast(
-              `1 "${name}" has been removed from your cart. Your new subtotal is now ${subtotal.formatted_with_symbol}`
+              `1 "${name}" a été retirer de votre panier. Votre nouveau subtotal est de ${subtotal.formatted_with_symbol} !`
             )
           )
       : handleRemoveItem();
@@ -44,7 +44,7 @@ function CartItem({ id, media, name, quantity, line_total, selected_options }) {
       .then(handleUpdateCart)
       .then(({ subtotal }) =>
         toast(
-          `Another "${name}" has been added to your cart. Your new subtotal is now ${subtotal.formatted_with_symbol}`
+          `Un autre "${name}" a été ajouté au panier. Votre nouveau subtotal est de ${subtotal.formatted_with_symbol} !`
         )
       );
 
@@ -81,7 +81,7 @@ function CartItem({ id, media, name, quantity, line_total, selected_options }) {
           </div>
           <div className="w-full flex md:flex-col items-center md:items-end justify-between">
             <div className="md:pb-4 lg:pb-5 inline-flex items-center">
-              <span className="pr-2">Quantity:</span>
+              <span className="pr-2">Quantité:</span>
               <button
                 onClick={decrementQuantity}
                 className="appearance-none inline-flex items-center justify-center rounded-lg border border-black w-5 h-5 text-xs text-black focus:outline-none hover:bg-black hover:text-white transition"
@@ -101,7 +101,7 @@ function CartItem({ id, media, name, quantity, line_total, selected_options }) {
                 onClick={handleRemoveItem}
                 className="appearance-none inline-flex items-center justify-center rounded-lg border border-black text-xs text-black px-1 h-5 opacity-50 hover:opacity-100 focus:opacity-100 focus:outline-none transition"
               >
-                Remove
+                Retirer
               </button>
             </div>
           </div>

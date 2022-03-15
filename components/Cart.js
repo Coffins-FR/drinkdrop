@@ -20,7 +20,7 @@ export default function Cart() {
 
       <div className="flex items-center justify-between py-3 md:py-4 lg:py-5">
         {isEmpty ? (
-          <p>Your cart is empty.</p>
+          <p>Votre Panier est vide.</p>
         ) : (
           <>
             <div className="text-lg md:text-xl">
@@ -32,7 +32,7 @@ export default function Cart() {
                 className="appearance-none leading-none p-1 md:p-1.5 lg:px-3.5 text-lg md:text-xl"
                 onClick={showCheckout}
               >
-                Check Out
+                Payer
               </Button>
             </div>
           </>
