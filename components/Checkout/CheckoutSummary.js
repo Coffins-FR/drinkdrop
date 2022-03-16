@@ -39,7 +39,7 @@ function CheckoutSummary({ subtotal, tax, shipping, line_items = [], total }) {
               ])}
               disabled={processing}
             >
-              {processing ? "Processing order" : "Continue"}
+              {processing ? "Traitement de la commande" : "Continuer"}
             </Button>
           </div>
         </div>
