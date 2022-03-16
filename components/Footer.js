@@ -35,21 +35,12 @@ function Footer() {
             </Link>
             ,
             <a
-              href="https://github.com/chec/commercejs-chopchop-demo"
+              href="https://github.com/Coffins-FR/drinkdrop"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black"
             >
               A propos
-            </a>
-            ,
-            <a
-              href="https://twitter.com/commercejs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black"
-            >
-              Contacts
             </a>
             ,
             <Link href="/">
